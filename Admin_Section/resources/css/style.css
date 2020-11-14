@@ -697,3 +697,31 @@ figure {
     margin-left: 15px;
     width: 200px;
 }
+
+.btn-assign-1 {
+    margin-bottom: 5px;
+}
+
+.bold_text_question_asgn_mn {
+    margin-bottom: 5px;
+}
+
+/* Create two equal columns that floats next to each other */
+.column-pop-asgn-mn {
+  background-color: #ffffff;
+  float: left;
+  margin-left: 6.5px;
+  width: 195px;
+  padding: 10px;
+  height: 235px; 
+  border: 1px solid #000000;
+  border-radius: 5px;/*Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  overflow: hidden;
+}

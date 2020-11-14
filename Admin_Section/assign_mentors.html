@@ -95,7 +95,49 @@
                         <p class="lvalues asgnp"><b>Name</b>&nbsp;:&nbsp;<span class="lvalues">Swati&nbsp;Mishra</span></p>
                         <p class="lvalues asgnp"><b>IIT</b>&nbsp;:&nbsp;<span class="lvalues">IIT Ropar</span></p>
                         <p class="lvalues asgnp"><b>Curent Mentee</b>&nbsp;:&nbsp;<span class="lvalues">0</span></p>
-                        <button type="button" class="btn btn-approval btn-success btn-asgn">Assign</button>
+                    
+                          
+                       <input type="button" class="btn btn-approval btn-assign-1 btn-success" value="Assign" onclick="ConfirmForm();" />
+                        <div id="BlockUIConfirm" class="BlockUIConfirm">
+                            <div class="blockui-mask"></div>
+                            <div class="RowDialogBody">
+                                <div class="confirm-header row-dialog-hdr-success">
+                                    Aman will be assigned as mentor to Neeraj
+                                </div>
+                                <div class="confirm-body">
+                                    <div>
+                                        <div class="row">
+                                          <div class="column-pop-asgn-mn ">
+                             
+                                              <h4>Mentee</h4>
+                                              <img src="resources/img/Mask_Group_1@2x.png" width="100px" height="100px" class="img-center">
+                                               <p class="lvalues asgnp"><b>Name</b>&nbsp;:&nbsp;<span class="lvalues">Swati&nbsp;Mishra</span></p>
+                                               <p class="lvalues asgnp"><b>Membership</b>&nbsp;:&nbsp;<span class="lvalues">Gold</span></p>
+                                               <p class="lvalues asgnp"><b>Phone</b>&nbsp;:&nbsp;<span class="lvalues">9998880001</span></p>
+                                          </div>
+                                          <div class="column-pop-asgn-mn ">
+                                              <h4>Mentor</h4>
+                                              <img src="resources/img/Mask_Group_1@2x.png" width="100px" height="100px" class="img-center">
+                                               <p class="lvalues asgnp"><b>Name</b>&nbsp;:&nbsp;<span class="lvalues">Swati&nbsp;Mishra</span></p>
+                                               <p class="lvalues asgnp"><b>IIT</b>&nbsp;:&nbsp;<span class="lvalues">IIT Ropar</span></p>
+                                               <p class="lvalues asgnp"><b>Phone</b>&nbsp;:&nbsp;<span class="lvalues">9998880001</span></p>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="confirm-btn-panel pull-right">
+                                    <div class="bold_text_question_asgn_mn">
+                                      <b>Are you sure ?</b>
+                                    </div>
+                                    <div class="btn-holder pull-right">
+                                        <input type="submit" class="row-dialog-btn btn btn-success" value="Yes, Submit" onclick="Submit();" />
+                                        <input type="button" class="row-dialog-btn btn btn-naked" value="No, Cancel" onclick="$('#BlockUIConfirm').hide();" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     
+                          
                       </div>
                     </div>
                     <div class="row asgn-mn-border-bottom ">
@@ -109,7 +151,9 @@
                         <p class="lvalues asgnp"><b>Name</b>&nbsp;:&nbsp;<span class="lvalues">Swati&nbsp;Mishra</span></p>
                         <p class="lvalues asgnp"><b>IIT</b>&nbsp;:&nbsp;<span class="lvalues">IIT Madras</span></p>
                         <p class="lvalues asgnp"><b>Current Mentee</b>&nbsp;:&nbsp;<span class="lvalues">0</span></p>
-                        <button type="button" class="btn btn-approval btn-success btn-asgn">Assign</button>
+                        
+                        <input type="button" class="btn btn-approval btn-assign-1 btn-success" value="Assign" onclick="ConfirmForm();" />  
+                          
                       </div>
                     </div>
                     <div class="row asgn-mn-border-bottom ">
@@ -123,7 +167,10 @@
                         <p class="lvalues asgnp"><b>Name</b>&nbsp;:&nbsp;<span class="lvalues">Swati&nbsp;Mishra</span></p>
                         <p class="lvalues asgnp"><b>IIT</b>&nbsp;:&nbsp;<span class="lvalues">IIT Ropar</span></p>
                         <p class="lvalues asgnp"><b>Current Mentee</b>&nbsp;:&nbsp;<span class="lvalues">0</span></p>
-                        <button type="button" class="btn btn-approval btn-success btn-asgn">Assign</button>
+                      
+                         <input type="button" class="btn btn-approval btn-assign-1 btn-success" value="Assign" onclick="ConfirmForm();" /> 
+                       
+                           
                       </div>
                     </div>
                     
@@ -136,7 +183,7 @@
         </div>
     </div>
 
-
+    <script src="resources/js/assign_mentor_popup_script.js"></script>
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 </body>
 </html>
