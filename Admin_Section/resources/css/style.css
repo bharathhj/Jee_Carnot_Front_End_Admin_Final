@@ -725,3 +725,106 @@ figure {
   clear: both;
   overflow: hidden;
 }
+
+
+
+
+/** --------------------------------------  **/
+/**               Feedback-Section          **/
+/** --------------------------------------  **/
+
+.feedback-filters {
+    margin-left: 500px;
+}
+
+
+
+
+
+.emoji{
+  position:relative;
+  top:-25px;
+  left:5px;
+}
+
+.critical{
+border-bottom: 54px solid #ff0033;
+border-left: 54px solid transparent;
+border-right: 54px solid transparent;
+float:left;
+margin-left:-35px;
+position:absolute;
+top:-8px;
+z-index: 1;
+-webkit-transform: rotate(-45deg);}
+
+.critical span{
+color:#fff;
+font-size:15px;
+font-weight:bold;
+position:absolute;
+text-align:left;
+right:-26px;
+top:21px;}
+
+.resolved{
+border-bottom: 54px solid #808080;
+border-left: 54px solid transparent;
+border-right: 54px solid transparent;
+float:left;
+margin-left:-35px;
+position:absolute;
+top:-8px;
+z-index: 1;
+-webkit-transform: rotate(-45deg);}
+
+.resolved span{
+color:#fff;
+font-size:15px;
+font-weight:bold;
+position:absolute;
+text-align:left;
+right:-26px;
+top:21px;}
+
+.pending{
+border-bottom: 54px solid #27A62E;
+border-left: 54px solid transparent;
+border-right: 54px solid transparent;
+float:left;
+margin-left:-35px;
+position:absolute;
+top:-8px;
+z-index: 1;
+-webkit-transform: rotate(-45deg);}
+
+.pending span{
+color:#fff;
+font-size:15px;
+font-weight:bold;
+position:absolute;
+text-align:left;
+right:-26px;
+top:21px;}
+
+
+.paragraph h5{
+  margin-bottom:0px;
+  margin-left: 10px;
+  font-size: 18px;
+  margin-top: 1.5px;
+}
+.paragraph p{
+  margin-bottom: 0px;
+  margin-left: 10px;
+}
+ 
+.btn-blue-color {
+    color: #ffffff;
+    background-color: #09206F; 
+}
+
+.btn-blue-color:hover {
+    color: #09206F;
+    background-color: #ffffff;
+}
