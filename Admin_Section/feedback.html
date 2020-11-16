@@ -53,18 +53,21 @@
       <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 container-z">
           <div class="container-8">
             <div class="mph2">
-            <h2> Assign Mentor </h2>
+            <h2> Feedback </h2>
             </div>
            
             <br>
              <div  class="feedback-filters">
                 <p> <b>Filters :</b>&nbsp;&nbsp;&nbsp;
-                <input type="radio" id="critical" name="critical" value="critical">
-                <label for="critical">Critical</label>&nbsp;&nbsp;&nbsp;
-                <input type="radio" id="pending" name="pending" value="pending">
-                <label for="pending">Pending</label>&nbsp;&nbsp;&nbsp;
-                <input type="radio" id="resolved" name="resolved" value="resolved">
-                <label for="resolved">Resolved</label> </p>
+                <button onclick="all-feedback"
+                type="button" class="btn btn-blue-all-color ">All</button>
+                <button onclick="all-feedback"
+                type="button" class="btn  btn-red-critical-color">Critical</button>
+                <button onclick="all-feedback"
+                type="button" class="btn btn-yellow-pending-color">Pending</button>
+                <button onclick="all-feedback"
+                type="button" class="btn btn-green-resolved-color">Resolved</button>
+                 </p>
                 
             </div>
              <div id="demo">
