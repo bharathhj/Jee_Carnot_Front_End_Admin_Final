@@ -480,11 +480,23 @@ table, th, td {
     width: 100px;
 }
 
+/** --------------------------------------  **/
+/**   Main Section View Assign Mentor 1     **/
+/** --------------------------------------  **/
+.mentee-assign-box {
+    margin-left: 73px;
+    width: 750px;
+    border: 1px solid #000;
+    background-color: #ffffff;
+    border-radius: 7px;
+}
+
 
 
 /** --------------------------------------  **/
-/**   Main Section View Assign Mentor       **/
+/**   Main Section View Assign Mentor 2     **/
 /** --------------------------------------  **/
+
 
 .container-8 {
     margin-top: 30px;
