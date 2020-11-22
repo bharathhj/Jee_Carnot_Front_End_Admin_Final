@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+
+    
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="resources/css/style.css">
+</head>
+<body>
+    
+<!-- NavBar -->
+
+  <nav class="navbar navbar-expand-lg navbar-light nav-bg-color">
+  <a class="navbar-brand" href="#"><img width="214px" height="50px"src="resources/img/LOGO%20bright@2x.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <button class="btn logout-btn" type="submit">Logout</button>
+    </form>
+  </div>
+</nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2 sidebar-left">
+      <a class="active" href="home.html">HOME</a>
+      <a href="search_mentor.html">SEARCH&nbsp;MENTORS</a>
+      <a href="search_mentee.html">SEARCH&nbsp;MENTEE</a>
+      <a href="feedback.html">FEEDBACK</a>
+      <a href="assign_mentors_1.html">ASSIGN MENTOR</a>
+      <a href="pay_mentors.html">PAY MENTORS</a>
+      <a href="material_requests.html">MATERIAL REQUESTS</a>
+      </div>
+      <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 container-z">
+          <div class="container-4">
+            <div class="mph2">
+            <h2> Mentor Profile</h2>
+            </div>
+            <br>
+            <br>
+
+            <div class="row-1 mentor-profile-view-box">
+              <div class="col-4 img-center"><br><img src="resources/img/profile.png" width="150px" height="150px" class="img-center"></div>
+              <div class="col-4">
+                   <div class="column details">
+                        <br>
+                        <p class="lvalues"><b>Name</b>&nbsp;:&nbsp;<span id="mentorName" class="lvalues"></span></p>
+                        <p class="lvalues"><b>Email</b>&nbsp;:&nbsp;<span id="mentorEmail" class="lvalues"></span></p>
+                        <p class="lvalues"><b>Phone</b>&nbsp;:&nbsp;<span id="mentorPhone" class="lvalues"></span></p>
+                       <p class="lvalues"><b>IIT</b>&nbsp;:&nbsp;<span id="iit" class="lvalues"></span></p>
+                        <br>
+                  </div>  
+              </div>
+              <div class="col-4">
+                    <br>
+                    <p class="lvalues act_det">Accout Details<br></p>
+                    <p class="lvalues"><b>Credit Balance</b>&nbsp;:&nbsp;<span id="creditBalance" class="lvalues"></span></p>
+                    <p class="lvalues"><b>Member Since</b>&nbsp;:&nbsp;<span id="memberSince" class="lvalues"></span></p>
+              </div>            
+            </div> 
+
+            <div class="mentee___h2">
+              <h2> Mentees :</h2>
+            </div>
+             
+              
+
+            <div id="mentorProfile"></div>
+
+
+
+
+          </div>
+        </div>
+    </div>
+  </div>
+
+<script>
+  function loaddata(obj){
+    for (let i = 0; i < obj.length; i++) {
+      let j = ` 
+      <div class="row-1 mentee-profile-view-box ">
+                
+                <div class="col-4 img-center"><br><img src="${obj[i].menteePhoto}" width="150px" height="150px" class="img-center"></div>
+                <div class="col-4">
+                     <div class="column details">
+                          <br>
+                          <p class="lvalues"><b>Name</b>&nbsp;:&nbsp;<span class="lvalues">${obj[i].menteeName}</span></p>
+                          <p class="lvalues"><b>Email</b>&nbsp;:&nbsp;<span class="lvalues">${obj[i].menteeEmail}/span></p>
+                          <p class="lvalues"><b>Phone</b>&nbsp;:&nbsp;<span class="lvalues">${obj[i].menteePhone}</span></p>
+                         <p class="lvalues"><b>Add On</b>&nbsp;:&nbsp;<span class="lvalues">${obj[i].addOn}</span></p>
+                          <p class="lvalues"><b>Membership</b>&nbsp;:&nbsp;<span class="lvalues">${obj[i].membership}</span></p>
+                      </div>  
+                </div>
+                <div class="col-4">
+                       <br>
+                      <a class="a-view-profile" href="${obj[i].id}"><button type="button" class="btn-view-profile">View Profile</button></a>       
+                </div>
+              </div>
+      `;
+
+var newDiv= document.createElement("div");
+
+newDiv.innerHTML=j;
+
+document.getElementById("mentorProfile").append(newDiv);
+}
+}
+
+function loaddata2(data2){
+        document.getElementById("mentorName").innerHTML=data2.mentorName
+        document.getElementById("mentorEmail").innerHTML=data2.mentorEmail
+        document.getElementById("mentorPhone").innerHTML=data2.mentorPhone
+        document.getElementById("iit").innerHTML=data2.iit
+        document.getElementById("creditBalance").innerHTML=data2.creditBalance
+        document.getElementById("memberSince").innerHTML=data2.memberSince
+}
+
+
+var data;
+  var xhr = new XMLHttpRequest;
+
+  xhr.open("get","/resources/json/mentorProfileMentee.json",true)
+  xhr.onload=function () {
+    data=this.responseText
+    data=JSON.parse(data);
+    loaddata(data);
+  }
+  xhr.send();
+
+
+
+  var data2;
+  var xhr2= new XMLHttpRequest;
+  xhr2.open("get","/resources/json/mentorProfile.json",true)
+  xhr2.onload=function () {
+    data2=this.responseText
+    data2=JSON.parse(data2);
+    loaddata2(data2);
+  }
+  xhr2.send();
+
+
+
+</script>
+</body>
+</html>
