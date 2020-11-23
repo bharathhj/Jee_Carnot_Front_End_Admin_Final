@@ -977,6 +977,7 @@ top:21px;}
 }
 
 .loginbox input[type="submit"]:hover{
+    border: 1px solid #000000;
     cursor: pointer;
     background-color: #ffffff;
     color:  #09206F;   
