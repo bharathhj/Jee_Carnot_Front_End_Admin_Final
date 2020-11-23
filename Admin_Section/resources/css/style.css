@@ -620,7 +620,11 @@ figure {
 
 
 .BlockUIConfirm {
+<<<<<<< HEAD
     display: none;
+=======
+	display: none;
+>>>>>>> 1965ccb507e0eb33c8e1be8b8a3740d0ab5f46f0
 	position: fixed;
 	top: 0;
 	left: 0;
