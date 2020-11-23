@@ -64,6 +64,10 @@
           </div>
         </div>
     </div>
+
+
+
+    
     <script>
       function loaddata(obj){
         for (let i = 0; i < obj.length; i++) {
@@ -104,7 +108,7 @@ document.getElementById("assignMentor1").append(newDiv);
 var data;
   var xhr = new XMLHttpRequest;
 
-  xhr.open("get","/resources/json/assignMentors1.json",true)
+  xhr.open("get","resources/json/assignMentors1.json",true)
   xhr.onload=function () {
     data=this.responseText
     data=JSON.parse(data);

@@ -56,9 +56,9 @@
                         <h3>Account details :</h3>
                 </div>
                 <div class="acct_det_p">
-                    <p class="lvalues"><b>Name&nbsp;:&nbsp;</b><span id="name-admin" class="lvalues">-</span></p>
-                    <p class="lvalues"><b>Email&nbsp;:&nbsp;</b><span id="email-admin" class="lvalues">-</span></p>
-                    <p class="lvalues"><b>Last Login&nbsp;:&nbsp;</b><span id="last-login-admin" class="lvalues">-</span></p> 
+                    <p class="lvalues"><b>Name&nbsp;:&nbsp;</b><span id="name-admin" class="lvalues"></span></p>
+                    <p class="lvalues"><b>Email&nbsp;:&nbsp;</b><span id="email-admin" class="lvalues"></span></p>
+                    <p class="lvalues"><b>Last Login&nbsp;:&nbsp;</b><span id="last-login-admin" class="lvalues"></span></p> 
                 </div>
          </div>
         <div class="container-2">
@@ -66,9 +66,9 @@
             <h3>Message Balance :</h3>
           </div>
           <div class="msg_blnc_h3">
-              <p class="lvalues"><b>Promotional&nbsp;:&nbsp;</b><span id="promotional-admin" class="lvalues">-</span></p>
-              <p class="lvalues"><b>Transactional&nbsp;:&nbsp;</b><span id="transactional-admin" class="lvalues">-</span></p>
-              <p class="lvalues"><b>OTP&nbsp;:&nbsp;</b><span id="otp-admin" class="lvalues">-</span></p>
+              <p class="lvalues"><b>Promotional&nbsp;:&nbsp;</b><span id="promotional-admin" class="lvalues"></span></p>
+              <p class="lvalues"><b>Transactional&nbsp;:&nbsp;</b><span id="transactional-admin" class="lvalues"></span></p>
+              <p class="lvalues"><b>OTP&nbsp;:&nbsp;</b><span id="otp-admin" class="lvalues"></span></p>
           </div>
       </div>
     </div>
@@ -129,7 +129,7 @@ function loaddata2(data2){
 var data;
 var xhr = new XMLHttpRequest();
 
-xhr.open("get","/resources/json/home.json",true);
+xhr.open("get","resources/json/home.json",true);
 xhr.onload=function(){
   data=this.responseText
   data=JSON.parse(data);
@@ -141,7 +141,7 @@ var data2;
 
 var xhr2= new XMLHttpRequest();
 
-xhr2.open("get","/resources/json/home2.json",true);
+xhr2.open("get","resources/json/home2.json",true);
 xhr2.onload=function(){
   data2=this.responseText
   data2=JSON.parse(data2);

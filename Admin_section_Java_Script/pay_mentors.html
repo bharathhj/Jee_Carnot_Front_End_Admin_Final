@@ -67,7 +67,8 @@
                                  Reference No :<br>
                                  <input class="pop-ref-no" type="text" id="reference_no" name="reference_no"><br>
                                  Remarks :<br>
-                                 <input class="pop-remarks" type="text" id="text" name="text">
+                                 <textarea class="pop-remarks" id="text" name="text"></textarea>
+                                 <!-- <input class="pop-remarks" type="text" id="text" name="text"> -->
                               </p>
                           </div>
                       </div>
@@ -145,7 +146,7 @@ function loaddata2(data2){
 var data;
   var xhr = new XMLHttpRequest;
 
-  xhr.open("get","/resources/json/payMentors.json",true)
+  xhr.open("get","resources/json/payMentors.json",true)
   xhr.onload=function () {
     data=this.responseText
     data=JSON.parse(data);
@@ -156,7 +157,7 @@ var data;
 
   var data2;
   var xhr2= new XMLHttpRequest;
-  xhr2.open("get","/resources/json/popUpPayMentors.json",true)
+  xhr2.open("get","resources/json/popUpPayMentors.json",true)
   xhr2.onload=function () {
     data2=this.responseText
     data2=JSON.parse(data2);
@@ -165,8 +166,6 @@ var data;
   xhr2.send();
 
 </script>
-
-
     <script src="resources/js/payment_popup_script.js"></script>
 
 </body>

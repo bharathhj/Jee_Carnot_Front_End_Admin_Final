@@ -134,7 +134,7 @@ function loaddata2(data2){
 var data;
   var xhr = new XMLHttpRequest;
 
-  xhr.open("get","/resources/json/mentorProfileMentee.json",true)
+  xhr.open("get","resources/json/mentorProfileMentee.json",true)
   xhr.onload=function () {
     data=this.responseText
     data=JSON.parse(data);
@@ -143,17 +143,15 @@ var data;
   xhr.send();
 
 
-
   var data2;
   var xhr2= new XMLHttpRequest;
-  xhr2.open("get","/resources/json/mentorProfile.json",true)
+  xhr2.open("get","resources/json/mentorProfile.json",true)
   xhr2.onload=function () {
     data2=this.responseText
     data2=JSON.parse(data2);
     loaddata2(data2);
   }
   xhr2.send();
-
 
 
 </script>

@@ -130,7 +130,7 @@ document.getElementById("searchMentee").append(newDiv);
 var data;
 var xhr = new XMLHttpRequest;
 
-xhr.open("get","/resources/json/searchMentee.json",true)
+xhr.open("get","resources/json/searchMentee.json",true)
 xhr.onload=function () {
 data=this.responseText
 data=JSON.parse(data);

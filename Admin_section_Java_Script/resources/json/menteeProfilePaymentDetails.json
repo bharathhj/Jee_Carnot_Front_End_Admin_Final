@@ -1,10 +1,33 @@
 [
     { 
-        "plan1":"Gold",
-        "date1":"03-10-20",
-        "amount1":"1500",
-        "plan2":"Silver",
-        "date2":"04-11-20",
-        "amount2":"800"
+        "plan":"Gold",
+        "date":"03-10-20",
+        "amount":"1500"
+
+    },
+    {
+        "plan":"Silver",
+        "date":"04-11-20",
+        "amount":"800"
+    },
+    {
+        "plan":"Silver",
+        "date":"04-11-20",
+        "amount":"800"
+    },   
+    {
+        "plan":"Silver",
+        "date":"04-11-20",
+        "amount":"800"
+    },
+    {
+        "plan":"Silver",
+        "date":"04-11-20",
+        "amount":"800"
+    },
+    {
+        "plan":"Silver",
+        "date":"04-11-20",
+        "amount":"800"
     }
 ]

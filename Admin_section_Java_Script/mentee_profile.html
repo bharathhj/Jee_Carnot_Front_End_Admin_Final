@@ -67,8 +67,23 @@
               <div class="col-4">
                   <br>
                   <p class="lvalues act_det">Payment Details<br></p>
-                 <div id="paymentDetails"></div>
+
+                  <table  id="paymentDetails">
+                    <tr>
+                      <th>Plan</th>
+                      <th>Date</th> 
+                      <th>Amount (INR)</th>
+                    </tr>
+                    
+                  </table>
+                
+
+                 <!-- <div id="paymentDetails"></div> -->
+
+
                 </div>   
+
+
               </div> 
   
               <div class="mentor_details___h2">
@@ -126,29 +141,18 @@
   <script>
     function loaddata(obj){
       for (let i = 0; i < obj.length; i++) {
-        let j = `
-                <table >
-                  <tr>
-                    <th>Plan</th>
-                    <th>Date</th> 
-                    <th>Amount (INR)</th>
-                  </tr>
-                  <tr>
-                    <td>${obj[i].plan1}</td>
-                    <td>${obj[i].date1}</td>
-                    <td>${obj[i].amount1}</td>
-                  </tr>
-                  <tr>
-                    <td>${obj[i].plan2}</td>
-                    <td>${obj[i].date2}</td>
-                    <td>${obj[i].amount2}</td>
-                  </tr>
-                </table>
+        let j = ` 
+                 
+                    <td>${obj[i].plan}</td>
+                    <td>${obj[i].date}</td>
+                    <td>${obj[i].amount}</td>
+                  
+          
               `;
 
 
 
-var newDiv= document.createElement("div");
+var newDiv= document.createElement("tr");
 
 newDiv.innerHTML=j;
 
@@ -179,7 +183,7 @@ function loaddata2(data2){
 var data;
   var xhr = new XMLHttpRequest;
 
-  xhr.open("get","/resources/json/menteeProfilePaymentDetails.json",true)
+  xhr.open("get","resources/json/menteeProfilePaymentDetails.json",true)
   xhr.onload=function () {
     data=this.responseText
     data=JSON.parse(data);
@@ -192,7 +196,7 @@ var data;
 
   var data2;
   var xhr2= new XMLHttpRequest;
-  xhr2.open("get","/resources/json/menteeProfile.json",true)
+  xhr2.open("get","resources/json/menteeProfile.json",true)
   xhr2.onload=function () {
     data2=this.responseText
     data2=JSON.parse(data2);

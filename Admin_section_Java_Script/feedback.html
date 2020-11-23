@@ -224,7 +224,7 @@
       var data;
   var xhr = new XMLHttpRequest;
 
-  xhr.open("get","/resources/json/feedback.json",true)
+  xhr.open("get","resources/json/feedback.json",true)
   xhr.onload=function () {
     data=this.responseText
     data=JSON.parse(data);

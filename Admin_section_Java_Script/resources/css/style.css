@@ -363,7 +363,8 @@ body {
 .mentee-profile-view-box-1{
     margin-left: 37px;
     width: 825px;
-    height: 250px;
+    min-height: 250px;
+    padding-bottom: 10px;
     border: 1px solid #000;
     background-color: #ffffff;
     border-radius: 7px;

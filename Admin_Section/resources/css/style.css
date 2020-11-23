@@ -167,10 +167,10 @@ body {
     margin-left: 150px;
     background-color: #ffffff;
     width: 833px;
+    height: 350px;
     border-radius: 10px;
     -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    padding-bottom: 15px;
 }
 
 .mentor-result-box {
@@ -178,8 +178,6 @@ body {
     border: 1px solid #000;
     background-color: #ffffff;
     border-radius: 7px;
-    margin-bottom: 15px;
-    
 }
 
 .row-1 {
@@ -205,10 +203,10 @@ body {
 }
 
 .btn-view-profile:hover{
-    background-color: #fff;
+    background-color: #ffffff;
     color: #09206F;
     width: 150px;
-    border: 1px solid #000;
+    border: 1px solid #000000;
     border-radius: 20px;
 }
 
@@ -228,11 +226,21 @@ body {
 .options_mentee {
     text-align: center;
 }
+.result {
+    margin-top: 30px;
+    margin-left: 150px;
+    background-color: #ffffff;
+    width: 833px;
+    height: 350px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
 .mentee-result-box {
     border: 1px solid #000;
     background-color: #ffffff;
     border-radius: 7px;
-    margin-bottom: 15px;;
 }
 
 .row-1 {
@@ -274,9 +282,6 @@ body {
 
 .img-center {
     text-align: center;
-    border-radius: 50%;
-    width:125px;
-    height:125px;
 }
 
 
@@ -289,7 +294,7 @@ body {
     margin-left: 150px;
     background-color: #ffffff;
     width: 900px;
-   padding-bottom: 5px;
+    height: 680px;
     border-radius: 10px;
     -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -314,7 +319,6 @@ body {
     border: 1px solid #000;
     background-color: #ffffff;
     border-radius: 7px;
-    margin-bottom: 25px;
 }
 
 .mph2{
@@ -354,7 +358,7 @@ body {
     margin-left: 150px;
     background-color: #ffffff;
     width: 900px;
-    padding-bottom: 25px;
+    height: 680px;
     border-radius: 10px;
     -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -369,8 +373,11 @@ body {
     border-radius: 7px;
 }
 
+table {
+    margin-left: -25px;
+}
 table, th, td {
-  width: 258px;;
+  
   border: 1px solid black;
   text-align: center;
   color: #09206F;
@@ -391,11 +398,11 @@ table, th, td {
 /** --------------------------------------  **/
 
 .container-6 {
-    margin-top: 25px;
+    margin-top: 55px;
     margin-left: 150px;
     background-color: #ffffff;
     width: 900px;
-    padding-bottom: 15px;
+    height: 470px;
     border-radius: 10px;
     -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -408,7 +415,6 @@ table, th, td {
     border: 1px solid #000;
     background-color: #ffffff;
     border-radius: 7px;
-    margin-bottom: 15px;;
 }
 
 
@@ -443,7 +449,6 @@ table, th, td {
 }
 
 
-
 /** --------------------------------------  **/
 /**   Main Section View Materials_Request   **/
 /** --------------------------------------  **/
@@ -453,7 +458,7 @@ table, th, td {
     margin-left: 150px;
     background-color: #ffffff;
     width: 900px;
-    padding-bottom: 15px;
+    height: 370px;
     border-radius: 10px;
     -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -461,7 +466,6 @@ table, th, td {
 
 .mentor-profile-view-box-3 {
     margin-left: 37px;
-    margin-bottom: 15px;
     width: 825px;
     height: 230px;
     border: 1px solid #000;
@@ -511,14 +515,10 @@ table, th, td {
 .mentor-profile-view-box-3 {
     margin-left: 37px;
     width: 825px;
+    height: 230px;
     border: 1px solid #000;
     background-color: #ffffff;
     border-radius: 7px;
-}
-.img-assign-mentor-2{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
 }
 
 .row-assign-mentor:after {
@@ -533,12 +533,13 @@ table, th, td {
   float: left;
   width: 50%;
   padding: 10px;
-  
+  height: 520px;
   /* Should be removed. Only for demonstration */
 }
 
 .column-asgn-mn-border{
     border: 1px solid #000000;
+    height: 500px;
     overflow: hidden;
 }
 
@@ -568,7 +569,6 @@ table, th, td {
 }
 
 .asgn-mn-border-bottom {
-    padding-bottom: 15px;
     border-bottom: 1px solid #000000;
 }
 
@@ -611,15 +611,7 @@ figure {
     position: relative;
 }
  
-.img-assign-mentor{
-    border-radius: 50%;
-    width:100px; 
-    height:100px;
-}
 
-.mentee-q-ans{   
-    text-align: left;
-}
 
 /** --------------------------------------  **/
 /** Pop-Up Confirmation Materials Requested **/
@@ -792,7 +784,7 @@ right:-26px;
 top:21px;}
 
 .resolved{
-border-bottom: 54px solid  #2aa01b;
+border-bottom: 54px solid #30ed18;
 border-left: 54px solid transparent;
 border-right: 54px solid transparent;
 float:left;

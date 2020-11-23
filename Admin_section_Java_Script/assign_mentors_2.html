@@ -202,7 +202,7 @@ function loaddata3(data3){
   var data;
   var xhr = new XMLHttpRequest;
 
-  xhr.open("get","/resources/json/assignMentors2.json",true)
+  xhr.open("get","resources/json/assignMentors2.json",true)
   xhr.onload=function () {
     data=this.responseText
     data=JSON.parse(data);
@@ -214,7 +214,7 @@ function loaddata3(data3){
 
   var data2;
   var xhr2= new XMLHttpRequest;
-  xhr2.open("get","/resources/json/assignMentor2MenteeDetails.json",true)
+  xhr2.open("get","resources/json/assignMentor2MenteeDetails.json",true)
   xhr2.onload=function () {
     data2=this.responseText
     data2=JSON.parse(data2);
@@ -227,7 +227,7 @@ function loaddata3(data3){
 
   var data3;
   var xhr3= new XMLHttpRequest;
-  xhr3.open("get","/resources/json/popUpAssignMentor.json",true)
+  xhr3.open("get","resources/json/popUpAssignMentor.json",true)
   xhr3.onload=function () {
     data3=this.responseText
     data3=JSON.parse(data3);
