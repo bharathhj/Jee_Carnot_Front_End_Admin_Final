@@ -850,6 +850,7 @@ top:21px;}
 }
 
 .btn-blue-color:hover {
+    border: 1px solid #000000;
     color: #09206F;
     background-color: #ffffff;
 }
@@ -861,6 +862,7 @@ top:21px;}
 }
 
 .btn-blue-all-color:hover {
+    border: 1px solid #000000;
     color: #09206F;
     background-color: #ffffff;
 }
@@ -872,6 +874,7 @@ top:21px;}
 }
 
 .btn-red-critical-color:hover {
+    border: 1px solid #000000;
     color: #09206F;
     background-color: #ffffff;
 }
@@ -884,6 +887,7 @@ top:21px;}
 
 
 .btn-yellow-pending-color:hover {
+    border: 1px solid #000000;
     color: #09206F;
     background-color: #ffffff;
 }
@@ -896,6 +900,7 @@ top:21px;}
 
 
 .btn-green-resolved-color:hover {
+    border: 1px solid #000000;
     color: #09206F;
     background-color: #ffffff;
 }
